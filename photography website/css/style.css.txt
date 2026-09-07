@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #fcfcfc;
+}
+
+h1, h2, h3, .logo {
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 1px;
+}
+
+/* Header & Nav */
+header.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.logo a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #111;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: #000;
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('https://picsum.photos/id/1015/1600/900') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #111;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #444;
+}
+
+/* Sections */
+.intro, .portfolio-section, .pricing-section, .about-section, .contact-section {
+    padding: 4rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro h2, .portfolio-section h1, .pricing-section h1, .about-section h1, .contact-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Portfolio Filter & Grid */
+.portfolio-filter {
+    margin-bottom: 2.5rem;
+}
+
+.filter-btn {
+    background: none;
+    border: none;
+    margin: 0 10px;
+    color: #777;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    cursor: pointer;
+    letter-spacing: 1px;
+    padding-bottom: 4px;
+    font-family: inherit;
+}
+
+.filter-btn.active {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.04);
+}
+
+/* Pricing Cards */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.pricing-card {
+    background: #fff;
+    padding: 2.5rem;
+    border: 1px solid #eee;
+    text-align: center;
+}
+
+.pricing-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.pricing-card .price {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.pricing-card ul {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.pricing-card li {
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* About Layout */
+.about-container {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    text-align: left;
+}
+
+.about-img {
+    width: 50%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto 0;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    background: #fff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    header.navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .about-container {
+        flex-direction: column;
+    }
+    
+    .about-img, .about-text {
+        width: 100%;
+    }
+}

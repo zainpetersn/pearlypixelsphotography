@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Pearly Pixels Photography</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo"><a href="index.html">Pearly Pixels</a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="pricing.html">Pricing & Investment</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <div class="about-container">
+                <img src="https://picsum.photos/id/64/500/600" alt="Photographer" class="about-img">
+                <div class="about-text">
+                    <h1>About Me</h1>
+                    <p>Hello! I'm the photographer behind Pearly Pixels. Photography is more than just taking pictures to me—it's about telling authentic stories and capturing raw emotions.</p>
+                    <p>Based in South Africa, I work with clients locally and worldwide to capture their special milestones.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pearly Pixels Photography. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
